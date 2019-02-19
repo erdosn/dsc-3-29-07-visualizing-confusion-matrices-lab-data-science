@@ -11,12 +11,42 @@ You will be able to:
 * Understand and assess precision recall and accuracy of classifiers
 * Evaluate classification models using various metrics
 
+### New Terms
+The squares would be populated with counts (frequency) of each type (Read it backwards)
+* True Positive - TP - When your predictor correctly predicts the right/correct outcome
+* False Positive - FP - When your predictor predicts a 1 and it's a 0
+* False Negative - FN - Predictor says 0 but it's a 1
+* True Negative - TN - Precitor says 0 and it's a 0
+
+
+**Type I and II Error**
+
+Type I - False Positive Rate
+
+
+Type II - False Negative Rate
+
 ## Confusion matrices
 
 Recall that the confusion matrix represents the counts (or normalized counts) of our True Positives, False Positives, True Negatives and False Negatives. This can further be visualized when analyzing the effectiveness of our classification algorithm.   
   
 Here's an example of generating a confusion matrix:
 ![](./images/confusion_matrix2.png)
+
+### Objectives
+YWBAT 
+* describe a confusion matrix and its parts
+* calculate precision, recall, accuracy and f1 scores
+* describe use cases for each score
+* describe auc/roc curves
+
+### Outline
+* Review classification stuff/logistic regression
+* Look confusion matrices
+* Use confusion matrices to calculate various metrics
+* assess all that stuff (code)
+* roc/auc curves
+* wrap up
 
 With that, let's look at some code for generating this visual.
 
@@ -250,7 +280,7 @@ plt.colorbar()
 
 
 
-![png](index_files/index_7_1.png)
+![png](index_files/index_10_1.png)
 
 
 ## Create a general function that plots the confusion matrix
